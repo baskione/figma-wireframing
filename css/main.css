@@ -11,9 +11,14 @@
     --primary-white-color: #ffffff;
 }
 
-.page {
+body {
     background-color: #ffffff;  
     color: var(--primary-text-color);
+/* По мимо шрифта указываем через запятую его семейство */
+    font-family: Montserrat, sans-serif;
+    letter-spacing: -0.015em;
+    font-size: 18px;
+    line-height: 1.67;
 }
 
 .list {
@@ -21,17 +26,32 @@
 }
 
 .logo {
-    color: #000000;
+    font-family: Comfortaa,cursive;
+    font-size: 28px;
+    line-height: 1.14px;
+    text-decoration: none;
+    
+    color: var(--title-text-color);
 }
 
 .logo:hover {
     color: var(--accent-color);
 }
 
+.button {
+        font-family: inherit;
+}
 
 /* site-nav */
+
 .site-nav .link {
     color: var(--accent-color);
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -44,31 +64,66 @@
 }
 
 /* hero */
+
 .hero-title {
+
+
+/* оформление текста\цвета */
     color: var(--title-text-color);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.42;
+    text-align: center;
+
+
 }
 
 
 /* Section */
+
 .section-title {
 color: var(--title-text-color);
+
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5px;
+    text-align: center;
 }
 
-/* Features */
-.feature-list .title {
+.section-description {
+    font-size: 36px;
+    line-height: 1.39;
+}
+
+/* Features and Examples */
+
+.feature-list .title,
+.work-list .title{
     color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
     
 }
 
-/* Examples */
-.work-list .title {
-color: var(--accent-color);
-}
 
+/* Works */
+
+.works {
+background-color: #E5E5E5;
+}
 /* Button */
 .button {
     color: var(--title-text-color);
+
     background-color: var(--primary-white-color);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
 .button.primary {
